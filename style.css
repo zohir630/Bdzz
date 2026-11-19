@@ -96,6 +96,7 @@ table.t th{background:var(--bg);font-size:12px;text-transform:uppercase;color:va
  .head .wrap{flex-wrap:wrap}.search{order:3;flex-basis:100%}
  .pd,.two{grid-template-columns:1fr}.slider{aspect-ratio:16/8}
  .grid{grid-template-columns:repeat(2,1fr);gap:8px}.bnav{display:flex}
+ .slider{min-height:150px}.float{padding:9px 12px;font-size:13px;bottom:70px}
 }
 /* admin */
 .adm{display:grid;grid-template-columns:210px 1fr;min-height:100vh}
@@ -118,3 +119,4 @@ table.t th{background:var(--bg);font-size:12px;text-transform:uppercase;color:va
 .login{max-width:360px;margin:12vh auto;background:#fff;padding:24px;border-radius:12px}
 .st{padding:2px 8px;border-radius:99px;font-size:12px;background:#e5e7eb}
 @media(max-width:760px){.adm{grid-template-columns:1fr}.side{display:flex;overflow-x:auto;padding:0}.side h3{display:none}.side a{white-space:nowrap}.g2{grid-template-columns:1fr}}
+        
