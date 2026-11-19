@@ -36,10 +36,11 @@ button{font:inherit;cursor:pointer}
 .slider .dots i.on{background:#fff}
 .hero{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:0 8%;color:#fff;background:linear-gradient(120deg,var(--pri),#2b3a67 60%,var(--acc))}
 .hero h2{font-size:clamp(22px,4vw,44px)}.hero p{margin-top:6px;opacity:.9}
-.cats{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:10px;margin:14px 0}
-.cat{background:#fff;border:1px solid var(--bd);border-radius:10px;padding:12px 6px;text-align:center;font-size:13px;font-weight:600}
-.cat:hover{border-color:var(--acc)}
-.cat .ci{width:56px;height:56px;border-radius:50%;margin:0 auto 6px;background:var(--bg);display:grid;place-items:center;font-size:22px;overflow:hidden}
+.cats{display:flex;gap:14px;overflow-x:auto;margin:14px 0;padding:4px 2px 8px;scrollbar-width:none}
+.cats::-webkit-scrollbar{display:none}
+.cat{flex:0 0 auto;width:62px;text-align:center;font-size:11.5px;font-weight:600;line-height:1.2}
+.cat:hover .ci{border-color:var(--acc)}
+.cat .ci{width:48px;height:48px;border-radius:50%;margin:0 auto 5px;background:#fff;border:2px solid var(--bd);display:grid;place-items:center;font-size:20px;overflow:hidden}
 .cat .ci img{width:100%;height:100%;object-fit:cover}
 .sec{background:#fff;border-radius:12px;padding:14px;margin:14px 0}
 .sec h2{font-size:18px;display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
@@ -117,4 +118,3 @@ table.t th{background:var(--bg);font-size:12px;text-transform:uppercase;color:va
 .login{max-width:360px;margin:12vh auto;background:#fff;padding:24px;border-radius:12px}
 .st{padding:2px 8px;border-radius:99px;font-size:12px;background:#e5e7eb}
 @media(max-width:760px){.adm{grid-template-columns:1fr}.side{display:flex;overflow-x:auto;padding:0}.side h3{display:none}.side a{white-space:nowrap}.g2{grid-template-columns:1fr}}
-  
